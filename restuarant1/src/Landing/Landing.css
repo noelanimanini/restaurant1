@@ -1,0 +1,27 @@
+.landingParent {
+    border: solid 1px;
+    color: black;
+    background-image: url("../images/background.jpg");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    width: -webkit-fill-available;
+    height: 803px;
+}
+
+.logoParent {
+    border: solid 3px;
+    color: pink;
+    /* width: auto;
+    height: auto;
+    float: none;
+    padding: 22.5px 0px 0px 0px;  */
+
+    
+}
+
+.logoChild {
+    display:inline-block;
+    width: 30%;
+}
+

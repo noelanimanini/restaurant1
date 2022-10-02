@@ -1,15 +1,14 @@
 import './App.css';
 import React from 'react'
 import Landing from './Landing/landing'
+import Menu from './Menu/Menu'
 
 function App() {
-  const style = {
-    backgroundColor: "green",
-  }
+  
   return (
-    <div style={style}>
+    <div className="appParent">
       < Landing/>
-      does this work
+      <Menu/>
 
     </div>
   );

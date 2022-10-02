@@ -1,0 +1,15 @@
+.menuParent {
+    border: solid 3px;
+    color: white;
+    height: 803px;
+    
+}
+
+.documentParent {
+    border: solid 3px;
+    color: lightcoral;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 803px;
+}

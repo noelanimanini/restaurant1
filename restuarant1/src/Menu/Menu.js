@@ -1,6 +1,7 @@
 import React from 'react'
 import menu from './ALOHA_PLATES.pdf'
-import { Document, Page, pdfjs } from "react-pdf";
+import AllPages from '../PDF/AllPages'
+import {pdfjs} from "react-pdf";
 import './menu.css'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -9,9 +10,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 function Menu() {
   return (
     <div className="menuParent">
-        <Document file={menu} onContextMenu={(e) => e.preventDefault()} className="documentParent">
+        <AllPages className="documentParent" pdf={menu} />
+        {/* <Document file={menu} onContextMenu={(e) => e.preventDefault()} className="documentParent">
+            
             <Page pageNumber={1} />
-        </Document>
+        </Document> */}
+       
         {/* <embed
         src={menu + "#toolbar=0"}
         type="application/pdf"

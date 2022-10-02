@@ -7,9 +7,10 @@
 
 .documentParent {
     border: solid 3px;
-    color: lightcoral;
+    color: aqua;
     width: 100%;
     display: flex;
     justify-content: center;
     height: 803px;
+    
 }

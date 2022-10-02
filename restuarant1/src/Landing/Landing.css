@@ -1,27 +1,70 @@
 .landingParent {
-    border: solid 1px;
-    color: black;
-    background-image: url("../images/background.jpg");
-    background-size:     cover;                     
-    background-repeat:   no-repeat;
-    background-position: center center;  
+    /* border: solid 3px; */
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.NavBar {
+    border: solid 3px;
+    /* color: plum; */
+    position: absolute;
+    height: 75px;
+    z-index: 1;
     width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* padding-top: 1%; */
+}
+
+#NavBarChild {
+    /* border: solid 3px; */
+    position: inherit;
+    color: #84DD04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+}
+
+
+#landingParentOverlay {
+    background: linear-gradient( rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.5) ), url("../images/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
     height: 803px;
 }
 
 .logoParent {
-    border: solid 3px;
-    color: pink;
-    /* width: auto;
-    height: auto;
-    float: none;
-    padding: 22.5px 0px 0px 0px;  */
-
+    /* border: solid 3px; */
+    color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .logoChild {
-    display:inline-block;
-    width: 30%;
+    /* display:inline-block; */
+    width: 40%;
 }
 
+.alohaAddress {
+    /* border: solid 1px; */
+    color: white;
+    padding-top: 2%;
+    font-family: 'Kanit', sans-serif;
+    font-size: larger;
+
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
+import './AllPages.css'
 
 export default function AllPages(props) {
   const [numPages, setNumPages] = useState(null);
@@ -10,15 +11,26 @@ export default function AllPages(props) {
 
   const { pdf } = props;
 
+  // <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+
+  let ele = document.getElementsByClassName('AllPagesParent')
+
+  const seePages = () => (
+   Array.from(new Array(numPages), (el, index) => (
+        <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+      ))
+  )
+  
   return (
     <Document
       file={pdf}
       options={{ workerSrc: "/pdf.worker.js" }}
-      onLoadSuccess={onDocumentLoadSuccess}
+      onLoadSuccess={onDocumentLoadSuccess}  
     >
-      {Array.from(new Array(numPages), (el, index) => (
-        <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-      ))}
+     {seePages()} 
+     
+    
     </Document>
   );
+  
 }

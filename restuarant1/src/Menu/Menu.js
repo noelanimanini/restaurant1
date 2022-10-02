@@ -10,7 +10,10 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 function Menu() {
   return (
     <div className="menuParent">
-        <AllPages className="documentParent" pdf={menu} />
+       
+
+        <AllPages pdf={menu} id="documentParent"/>
+        
         {/* <Document file={menu} onContextMenu={(e) => e.preventDefault()} className="documentParent">
             
             <Page pageNumber={1} />

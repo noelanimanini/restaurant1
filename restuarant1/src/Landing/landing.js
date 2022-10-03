@@ -20,7 +20,7 @@ export default function landing() {
             </div>
           </div>
       </div>
-    <div className='landingParent' id="landingParentOverlay">
+    <div  id="landingParentOverlay">
       <div className="logoParent">
         <img className="logoChild" src={logo} alt="aloha-kitchen-logo"/>
         <div className="alohaAddress">

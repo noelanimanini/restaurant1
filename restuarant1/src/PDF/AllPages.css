@@ -1,5 +1,12 @@
-#AllPagesParent {
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+}
+.AllPagesParent {
     border: solid 2px;
     color: pink;
-    background: inherit
+    display: flex;
+    justify-content: center;
+    /* background: inherit */
 }

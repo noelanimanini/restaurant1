@@ -6,7 +6,7 @@ import Menu from './Menu/Menu'
 function App() {
   
   return (
-    <div className="appParent">
+    <div >
       < Landing/>
       <Menu/>
 
